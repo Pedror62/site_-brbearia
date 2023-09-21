@@ -307,7 +307,7 @@ section{
 }
 
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     ul{
         display: flex;
         justify-content: space-between;
@@ -353,6 +353,9 @@ section{
     }
     .logos{
         display: block;
+    }
+    bigode{
+        .display:none;
     }
  }
 
