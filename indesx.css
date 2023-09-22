@@ -6,7 +6,7 @@
     
 }
 body{
-   
+  
     background-color: #ccc;
     align-items:center;
     justify-content:center;
@@ -33,7 +33,7 @@ body{
     justify-content: space-evenly;
     width: 100%;
     position: fixed;
-     z-index: 2;
+    z-index: 2;
     margin-bottom: 21px;
     font-family: 'Croissant One', cursive;
     font-family: 'Lora', serif;
@@ -164,6 +164,7 @@ section{
     margin-right: auto;
     gap: .5rem;
     height: 295px;
+    widht:750px;
  }
 .divbaixo{
     padding-top: 2.1rem;
@@ -174,6 +175,7 @@ section{
     border-radius: 50%;
     height: 230px;
     width: 230px;
+   
     border: #CC5 solid 2px;
   
     margin-left: auto;
@@ -293,6 +295,8 @@ section{
     margin-right:5px;
     font-size:16px;
     font-family:arial;
+    width: 100%;
+    text-align: center;
 }
 .adress{
     display: flex;
@@ -305,14 +309,34 @@ section{
     margin-left: auto;
     margin-right: auto;
 }
+html ::-webkit-scrollbar {
+    width: 1px;
+    height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+  }
+  html ::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 1px;
+  }
+  
+   html ::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius:5px;
 
+  }
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+  }
 
 @media (min-width: 576px) {
+    .navbar{
+        display:none;
+    }
     ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 5rem;
+        gap: 4rem;
     }
     
     .apresent h2 {
@@ -342,10 +366,9 @@ section{
         margin-left: auto;
         margin-right: auto;
         gap: 0.5rem;
-        width: 570px;
-        max-width: 567px;
+        max-width: 576px;
+        
         overflow-x: auto;
-       
     }
     .map iframe {
         width: 500px;
@@ -354,9 +377,90 @@ section{
     .logos{
         display: block;
     }
-    bigode{
-        .display:none;
-    }
- }
+    .map iframe{
+        width:400px;
+        height:400px;
+        border-radius:10px;
+        padding-bottom:50px;
+        }
+}
 
- @media (min-width: 768px) { ... }
+@media (min-width: 768px) { 
+    #serviços{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.5rem;
+        max-width: 768px;
+        overflow-x: auto;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 991.98px) {
+    #serviços {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.5rem;
+        max-width: 991px;
+        
+        overflow-x: auto;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6rem;
+   }
+
+   .map iframe{
+    width:800px;
+    height:450px;
+    border-radius:10px;
+    padding-bottom:50px;
+    }
+    .divbaixo p{
+    font-size: 27px;
+    margin-bottom: 35rem;
+    }
+    #serviços {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.5rem;
+    max-width: 991px;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    }
+    .pe p{
+    margin-right:5px;
+    font-size:22px;
+    font-family:arial;
+    }
+}
+   
+
+@media (min-width: 1199.98px) {
+    #serviços {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.5rem;
+        max-width: 1199px;
+        
+        overflow-x: auto;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8rem;
+   }
+
+}
