@@ -328,6 +328,55 @@ html ::-webkit-scrollbar {
     scrollbar-color: black transparent;
   }
 
+@media (min-width: 413px){ 
+    .navbar{
+        display:none;
+    }
+    .apresent h2 {
+        padding-top: -25px;
+        padding-bottom: 15px;
+        line-height: 31px;
+        color: #fff;
+        /* text-align: center; */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        max-width: 413px;
+    
+    }
+    .apre{
+        max-width: 413px;  
+    }
+    #serviços{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.5rem;
+        max-width: 576px;
+    
+        max-width: 413px;  
+        overflow-x: auto;
+    }
+    .logos{
+     max-width: 413px; 
+     display: contents;
+    }
+    .unidade{
+        max-width: 413px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .map iframe{
+        max-width: 400px; 
+        height:350px;
+        border-radius:10px;
+        padding-bottom:50px;
+    
+    }
+}
+
+
 @media (min-width: 576px) {
     .navbar{
         display:none;
@@ -399,6 +448,11 @@ html ::-webkit-scrollbar {
         justify-content: space-between;
         align-items: center;
         gap: 4rem;
+    }
+    .logos{
+        margin-left: auto;
+        margin-right: auto;
+    
     }
 }
 
