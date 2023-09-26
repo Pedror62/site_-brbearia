@@ -253,7 +253,46 @@ section{
     align-items: center;
     gap: 1rem;
 }
+.agendamento{
+    display: flex;
+    flex-direction: column;
 
+    width: 13rem;
+    max-width: 955;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.1rem;
+}
+.agendamento input, label, select{
+    border-radius: 4px;
+    border: none;
+    padding: 3px 6px;
+    width: 12rem;
+    background-color: #ccc;
+    color:#000;
+}
+
+
+form{
+    background-color: #cc4;
+    border-radius: 10px 0 10px 0px;
+}
+button{
+    padding: 15px 20px;
+    margin: 1rem;
+    border-radius: 3px;
+    border: none;
+    color: #000;
+    background-color: #ccc;
+   
+}
+button img{
+    widht:20px;
+    height:20px;
+}
 .map iframe{
     width:600px;
     height:350px;
@@ -268,7 +307,7 @@ section{
 
  .showT{
     opacity: 1;
-    transform: translateY(-10%);
+    transform: translateY(-1%);
     filter: blur(0);
     transition: all 1s;
  }
@@ -327,6 +366,35 @@ html ::-webkit-scrollbar {
     scrollbar-color: black transparent;
   }
 
+
+select option {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    
+    border-bottom-bottom: solid #000;
+  }
+  option.destaque {
+ //   background-color: #ffcc00;
+    font-weight: bold;
+    border-bottom-width: 10px;
+    border-bottom-style: solid #000;
+  }
+  .select option {
+    width: 40px; /* Largura desejada */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 55px;
+    font-size: 16px;
+}
+.select-custom option {
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Cor do texto */
+    font-size: 16px;
+    border-bottom: solid 5px;
+}
+
+
 @media (min-width: 316px){
     .navbar {
         display: none;
@@ -359,6 +427,29 @@ html ::-webkit-scrollbar {
     .logos{
      max-width: 316px; 
      display: contents;
+    }
+    form{
+        widht:316px;
+        max-weight:316px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .agendamento {
+        display: flex;
+        flex-direction: column;
+         width: 316px; 
+        max-width: 955;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.1rem;
+    }
+    .agendamento h2 {
+        font-size: 3rem;
+        padding: 1rem;
     }
     .map iframe{
         width:200px;
@@ -423,6 +514,29 @@ html ::-webkit-scrollbar {
     .logos{
         display: block;
     }
+    form{
+        widht:413px;
+        max-weight:413px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .agendamento {
+        display: flex;
+        flex-direction: column;
+         width: 413px; 
+        max-width: 955;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.1rem;
+    }
+    .agendamento h2 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
     .map iframe{
         width:413px;
         height:400px;
@@ -479,12 +593,36 @@ html ::-webkit-scrollbar {
         
         overflow-x: auto;
     }
+    form{
+        widht:576px;
+        max-weight:576px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .agendamento {
+        display: flex;
+        flex-direction: column;
+         width: 576px; 
+        max-width: 955;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.1rem;
+    }
+    .agendamento h2 {
+        font-size: 5rem;
+        padding: 1rem;
+    }
     .map iframe {
         width: 500px;
       
     }
     .logos{
         display: block;
+        display: contents;
     }
     .map iframe{
         width:400px;
@@ -495,13 +633,15 @@ html ::-webkit-scrollbar {
 }
 
 @media (min-width: 768px) { 
-    #serviços{
+    #serviços {
         display: flex;
         margin-left: auto;
         margin-right: auto;
         gap: 0.5rem;
-        max-width: 768px;
+        max-width: 991px;
         overflow-x: auto;
+        height: 25rem;
+        margin: 1rem;
     }
     ul{
         display: flex;
@@ -514,9 +654,49 @@ html ::-webkit-scrollbar {
         margin-right: auto;
     
     }
+    form{
+        widht:768px;
+       
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .agendamento {
+        display: flex;
+        flex-direction: column;
+        width: 768px; 
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.1rem;
+    }
+    .agendamento h2 {
+        font-size: 5rem;
+        padding: 1rem;
+    } 
+    .agendamento input , select{
+            border-radius: 4px;
+            border: none;
+            padding: 5px 1px;
+            width: 14rem;
+            background-color: #ccc;
+            color: #000;
+            font-size: 17px; 
+    }
+    button {
+        padding: 19px 54px;
+        margin: 1rem;
+        border-radius: 5px;
+        border: none;
+        color: #000;
+        background-color: #ccc;
+        font-size: 17px;
+    }
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 991px) {
     #serviços {
         display: flex;
         margin-left: auto;
@@ -557,10 +737,51 @@ html ::-webkit-scrollbar {
     font-size:22px;
     font-family:arial;
     }
+
+    form{
+        widht:991px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .agendamento {
+        display: flex;
+        flex-direction: column;
+        width: 991px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.1rem;
+    }
+   
+    .agendamento h2 {
+        font-size: 5rem;
+        padding: 1rem;
+    } 
+    .agendamento input , select{
+            border-radius: 4px;
+            border: none;
+            padding: 5px 1px;
+            width: 14rem;
+            background-color: #ccc;
+            color: #000;
+            font-size: 17px; 
+    }
+    button {
+        padding: 19px 54px;
+        margin: 1rem;
+        border-radius: 5px;
+        border: none;
+        color: #000;
+        background-color: #ccc;
+        font-size: 17px;
+    }
 }
    
 
-@media (min-width: 1199.98px) {
+@media (min-width: 1199px) {
     #serviços {
         display: flex;
         margin-left: auto;
@@ -577,59 +798,102 @@ html ::-webkit-scrollbar {
         gap: 8rem;
    }
    
-.apresent h2{
-    padding-top:50px;
-    padding-bottom:30px;
-    line-height: 50px; 
-    color:#fff;
-    font-size: 147px;
- }
- .apresent p{
-    line-height: 34px;
-    width: 518px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
- }
- .apre{
-    font-size:30px;
-     font-weight: bold;
-     font-family: roboto;
-     line-height: 66px;
+    .apresent h2{
+        padding-top:50px;
+        padding-bottom:30px;
+        line-height: 50px; 
+        color:#fff;
+        font-size: 147px;
+    }
+    .apresent p{
+        line-height: 34px;
+        width: 518px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    .apre{
+        font-size:30px;
+        font-weight: bold;
+        font-family: roboto;
+        line-height: 66px;
+    
+        color:#fff;
+        display: flex;
+        justify-content: center;
+        
+        font-weight: bold;
+        text-shadow: #000 3px 3px 3px;
  
-     color:#fff;
-     display: flex;
-     justify-content: center;
-     
-     font-weight: bold;
-     text-shadow: #000 3px 3px 3px;
- 
- }
-.apresent{
-    display: flex;
-    flex-direction: column;
-     background-image: url(./img/santana.jpg);
-     padding:20rem 1rem;
-     background-size: cover;
+    }
+    .apresent{
+        display: flex;
+        flex-direction: column;
+        background-image: url(./img/santana.jpg);
+        padding:20rem 1rem;
+        background-size: cover;
 
- } 
+    } 
 
-.apresent h2{
-    padding-top:50px;
-    padding-bottom:30px;
-    line-height: 50px; 
-    color:#fff;
-    font-size: 147px;
- }
- .apresent p{
-    line-height: 25px; 
-    width: 1000px; 
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 2rem;
- }
+    .apresent h2{
+        padding-top:50px;
+        padding-bottom:30px;
+        line-height: 50px; 
+        color:#fff;
+        font-size: 147px;
+    }
+
+    .apresent p{
+        line-height: 25px; 
+        width: 1000px; 
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 2rem;
+    }
+    form{
+        widht:1199px;
+        max-weight:1199px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .agendamento {
+        display: flex;
+        flex-direction: column;
+        width: 1199px;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 0.1rem;
+    }
+    .agendamento h2 {
+        font-size: 5rem;
+        padding: 1rem;
+    } 
+    .agendamento input, select{
+            border-radius: 4px;
+            border: none;
+            padding: 7px 3px;
+            width: 21rem;
+            background-color: #ccc;
+            color: #000;
+            font-size: 22px;
+    
+    }
+    button {
+        padding: 19px 54px;
+        margin: 1rem;
+        border-radius: 5px;
+        border: none;
+        color: #000;
+        background-color: #ccc;
+        font-size: 17px;
+    }
 
 }
    
