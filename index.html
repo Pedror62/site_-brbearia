@@ -125,24 +125,33 @@
                 <img src="./img/instagram-logo-48.png ">
             </p>
 
-            <form>
+            <form id="agendamentoForm" click="botao()">
                 <div class="agendamento">
-                    <h2>Agendamento</h2>
-                    <input type="text" id="nane" name="nome" placeholder="none/apelido">
-                    
+                    <h2>Agende um Horário</h2>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
 
-                    <select name="plataforma">
-                        <option class="destaque" value="escolaUmServiço">escola um serviço</option>
-                        <option class="destaque" value="corte">corte</option>
-                        <option class="destaque" value="botox">botox</option>
-                        <option class="destaque" value="sobrancelha">sobrancelha</option>
-                        <option class="destaque" value="barba">barba</option>
-                        <option class="destaque" value="barba e corte">barba e corte"</option>
-                        <option class="destaque" value="pe">Pe</option>
-                        <option class="destaque" value="combomDeServiçoMensal">combo de serviço mensal</option>
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" id="telefone" name="telefone" required><br><br>
+
+                    <label for="horario">Horário Desejado:</label>
+                    <input type="time" id="horario" name="horario" required><br><br>
+
+                    <label for="destaque">Escolha um serviço:</label>
+                    <select id="escolhas" name="plataforma">
+                        <option id="destaque" class="destaque" value="escolaUmServiço">escola um serviço</option>
+                        <option id="destaque" class="destaque" value="corte">corte</option>
+                        <option id="destaque" class="destaque" value="botox">botox</option>
+                        <option id="destaque" class="destaque" value="sobrancelha">sobrancelha</option>
+                        <option id="destaque" class="destaque" value="barba">barba</option>
+                        <option id="destaque" class="destaque" value="barba e corte">barba e corte"</option>
+                        <option id="destaque" class="destaque" value="combomDeServiçoMensal">combo de serviço mensal
+                        </option>
                     </select>
-                    <button type="submit" ><i class="fa-brands fa-whatsapp fa-4X1"></i>Enviar</button>
+                    <input type="submit" value="Enviar Pedido">
             </form>
+
+
             </div>
         </section>
         <section class="map">

@@ -42,3 +42,27 @@ let idx = 0;
     
  }
  setInterval(corrocel, 1800);
+
+
+
+function botao(){
+    document.querySelector("agendamentoForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        // Obtenha os valores do formulário
+        const nome = document.querySelector("#nome").value;
+        const telefone = document.querySelector("#telefone").value;
+        const horario = document.querySelector("#horario").value;
+        const opcao = document.querySelectorAll(' #destaque').value;
+        
+        // Formate a mensagem do WhatsApp
+        const mensagem = `Olá, gostaria de agendar um horário com o nome ${nome}, telefone ${telefone} para o horário ${horario}. Serviço escolhido: ${opcao}`;
+        
+        // Abra o WhatsApp com a mensagem predefinida
+        window.open(`https://api.whatsapp.com/send?phone=seunone&text=${encodeURIComponent(mensagem)}`, "_blank");
+       
+    })
+     console.log(opcaoEnvio)
+    console.log(botao())
+}
+ 
